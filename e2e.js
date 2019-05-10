@@ -4,9 +4,9 @@ const assert = require('assert');
 const { Builder, Key, By, until } = require('selenium-webdriver');
 describe('Checkout QA site', function () {
   let driver;
-  before(async function () {
+  before(function () {
     this.timeout = 10000;
-    driver = await new Builder().forBrowser('chrome').build();
+    driver = new Builder().forBrowser('chrome').build();
   });
   // Next, we will write steps for our test. 
   // For the element ID, you can find it by open the browser inspect feature.
