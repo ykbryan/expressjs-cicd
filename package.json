@@ -4,7 +4,8 @@
   "description": "this is for cicd demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "e2e": "mocha --recursive --timeout 10000 e2e.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,12 @@
   },
   "homepage": "https://github.com/ykbryan/expressjs-cicd#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "chromedriver": "^74.0.0",
+    "express": "^4.16.4",
+    "mocha": "^6.1.4",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
   }
 }
