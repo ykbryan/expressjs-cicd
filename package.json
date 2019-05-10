@@ -1,0 +1,26 @@
+{
+  "name": "expressjs-cicd",
+  "version": "1.0.0",
+  "description": "this is for cicd demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ykbryan/expressjs-cicd.git"
+  },
+  "keywords": [
+    "express",
+    "cicd"
+  ],
+  "author": "Bryan Chua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ykbryan/expressjs-cicd/issues"
+  },
+  "homepage": "https://github.com/ykbryan/expressjs-cicd#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
