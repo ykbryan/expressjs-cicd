@@ -1,3 +1,1 @@
-```
-node index.js
-```
+Run this command to begin `node index.js`
