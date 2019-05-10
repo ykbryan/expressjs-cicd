@@ -5,6 +5,7 @@ const { Builder, Key, By, until } = require('selenium-webdriver');
 describe('Checkout QA site', function () {
   let driver;
   before(async function () {
+    this.timeout = 10000;
     driver = await new Builder().forBrowser('chrome').build();
   });
   // Next, we will write steps for our test. 
