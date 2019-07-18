@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+  pre_build:
+    commands:
+      # - echo Installing source NPM dependencies...
+      # - npm install unit.js
+      - touch build1.txt
+  post_build:
+    commands:
+      - echo Build completed `date`
+artifacts:
+  files:
+    - '**/*'
