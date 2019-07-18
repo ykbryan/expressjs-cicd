@@ -17,7 +17,7 @@ phases:
   #     - mocha HelloWorld.js
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo Build completed `date`
 artifacts:
   files:
     - '**/*'
