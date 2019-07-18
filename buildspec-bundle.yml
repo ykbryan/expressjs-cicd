@@ -9,6 +9,7 @@ phases:
       # - echo Installing source NPM dependencies...
       # - npm install unit.js
       - ls
+      - ls $CODEBUILD_SRC_DIR_BuildArtifact02
   post_build:
     commands:
       - echo Build completed `date`
