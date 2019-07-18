@@ -6,10 +6,7 @@ phases:
       docker: 18
   pre_build:
     commands:
-      # - echo Installing source NPM dependencies...
-      # - npm install unit.js
-      - cp -R $CODEBUILD_SRC_DIR_BuildArtifact02/* .
-      - ls
+      - touch test.txt
   post_build:
     commands:
       - echo Build completed `date`
