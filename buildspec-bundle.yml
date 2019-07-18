@@ -9,6 +9,7 @@ phases:
       # - echo Installing source NPM dependencies...
       # - npm install unit.js
       - cp -R $CODEBUILD_SRC_DIR_BuildArtifact02/* .
+      - cp -R $CODEBUILD_SRC_DIR_BuildArtifact03/* .
       - ls
   post_build:
     commands:
