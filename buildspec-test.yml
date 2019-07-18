@@ -6,12 +6,11 @@ phases:
       docker: 18
   pre_build:
     commands:
-      # - echo Installing source NPM dependencies...
-      - npm install
+      - touch test.txt
+      - ls
   post_build:
     commands:
       - echo Build completed `date`
-      - rm -Rf .git/
 artifacts:
   files:
     - '**/*'

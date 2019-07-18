@@ -7,11 +7,11 @@ phases:
   pre_build:
     commands:
       # - echo Installing source NPM dependencies...
-      - npm install
+      # - npm install unit.js
+      - touch build1.txt
   post_build:
     commands:
       - echo Build completed `date`
-      - rm -Rf .git/
 artifacts:
   files:
     - '**/*'
