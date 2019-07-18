@@ -10,7 +10,6 @@ phases:
       # - npm install unit.js
       - npm install
   # build:
-  #   commands:
   post_build:
     commands:
       - echo Build completed `date`
