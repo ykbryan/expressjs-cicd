@@ -7,7 +7,6 @@ phases:
   pre_build:
     commands:
       # - echo Installing source NPM dependencies...
-      # - npm install unit.js
       - npm install
   post_build:
     commands:
