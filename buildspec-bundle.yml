@@ -10,6 +10,7 @@ phases:
       # - npm install unit.js
       - ls
       - ls $CODEBUILD_SRC_DIR_BuildArtifact02
+      - cp -R $CODEBUILD_SRC_DIR_BuildArtifact02 .
   post_build:
     commands:
       - echo Build completed `date`
